@@ -13,7 +13,7 @@ public interface PokemonService {
 
     List<Pokemon> getAllByType(String Type) throws IllegalArgumentException;
 
-    Optional<Pokemon> findOneByNumero(Long pokemonNumero);
+    Optional<Pokemon> findOneByNumber(Long pokemonNumber);
 
     Pokemon savePokemon(Pokemon pokemonToSave);
 

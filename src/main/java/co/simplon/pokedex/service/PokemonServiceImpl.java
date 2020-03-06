@@ -5,7 +5,6 @@ import co.simplon.pokedex.model.Type;
 import co.simplon.pokedex.repository.PokemonRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -29,8 +28,8 @@ public class PokemonServiceImpl implements PokemonService {
     }
 
     @Override
-    public Optional<Pokemon> findOneByNumero(Long pokemonNumero) {
-        return pokemonRepository.findById(pokemonNumero);
+    public Optional<Pokemon> findOneByNumber(Long pokemonNumber) {
+        return pokemonRepository.findById(pokemonNumber);
     }
 
     @Override
